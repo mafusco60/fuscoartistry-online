@@ -1,0 +1,26 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Fri 2024-11-08 06:15:57 UTC; 4h 32min ago
+       Docs: man:nginx(8)
+    Process: 65251 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 65252 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 66080 ExecReload=/usr/sbin/nginx -g daemon on; master_process on; -s reload (code=exited, status=0/SUCCESS)
+   Main PID: 65253 (nginx)
+      Tasks: 5 (limit: 9477)
+     Memory: 44.0M
+        CPU: 377ms
+     CGroup: /system.slice/nginx.service
+             ├─65253 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─66081 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             └─66082 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+Nov 08 06:15:57 srv633632 nginx[65252]: nginx: [warn] "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/nginx/ssl-certificates/www.fuscoartistry.com.crt"
+Nov 08 06:15:57 srv633632 systemd[1]: Started A high performance web server and a reverse proxy server.
+Nov 08 06:20:58 srv633632 systemd[1]: Reloading A high performance web server and a reverse proxy server...
+Nov 08 06:20:58 srv633632 nginx[65388]: nginx: [warn] "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/nginx/ssl-certificates/www.fuscoartistry.com.crt"
+Nov 08 06:20:58 srv633632 nginx[65388]: nginx: [warn] "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/nginx/ssl-certificates/www.fuscoartistry.com.crt"
+Nov 08 06:20:58 srv633632 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+Nov 08 07:14:44 srv633632 systemd[1]: Reloading A high performance web server and a reverse proxy server...
+Nov 08 07:14:44 srv633632 nginx[66080]: nginx: [warn] "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/nginx/ssl-certificates/www.fuscoartistry.com.crt"
+Nov 08 07:14:44 srv633632 nginx[66080]: nginx: [warn] "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/nginx/ssl-certificates/www.fuscoartistry.com.crt"
+Nov 08 07:14:44 srv633632 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
