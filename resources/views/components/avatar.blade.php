@@ -14,6 +14,7 @@
         margin: 0 auto;
       "
     />
+    <p class="text-center text-black text-sm font-semibold mt-2">{{ $userOrAdmin->filename }}</p>
   @else
     <img
       src="{{ asset('avatars/default-avatar.png') }}"
@@ -26,5 +27,6 @@
         margin: 0 auto;
       "
     />
+    <p class="text-center text-black text-sm font-semibold mt-2">default</p>
   @endif
 </div>

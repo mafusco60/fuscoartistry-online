@@ -19,6 +19,7 @@
 
 
 {{--    @vite('resources/css/app.css') --}}
+<link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <link
       rel="icon"

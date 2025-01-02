@@ -16,27 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         //Truncate tables
-       /*  DB::table('users')->truncate();
-        DB::table('favorites')->truncate();
-
-        $this->call(TestUserSeeder::class);
-        $this->call(FavoriteSeeder::class); */
-
-       /*  DB::table('messages')->truncate();
-
-        $this->call(MessageSeeder::class); */
-
-        DB::table('admins')->truncate();
-
-        $this->call(AdminSeeder::class);
-
-        DB::table('archive_messages')->truncate();
-
-        $this->call(ArchiveMessageSeeder::class);
-
-
-
-
-
+      DB::table('users')->truncate();
+      $this->call(TestUserSeeder::class);
     }
 }

@@ -8,6 +8,7 @@
   {{-- Profile Info Form --}}
   <div class="bg-white p-8 rounded-lg shadow-md w-full">
     <h3 class="text-2xl text-center font-semibold mb-4">Profile Info</h3>
+    
     <form
       method="POST"
       action="{{ route($route) }}"

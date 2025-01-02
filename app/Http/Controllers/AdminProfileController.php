@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-
-use App\Models\Admin;
 
 class AdminProfileController extends Controller
 {
@@ -56,7 +57,10 @@ class AdminProfileController extends Controller
     }
 
     // Update the admin's  fields
-    $admin->update($formFields);
+     $admin->update($formFields);
+
+ 
+
 
     return redirect()->route('admin-profiles.edit')->with('success', 'Profile updated successfully.');
 

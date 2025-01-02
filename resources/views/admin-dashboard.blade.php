@@ -20,7 +20,7 @@
             class="{{-- group relative --}}"
           ></div>
           <x-card>
-            <h2 class="text-xl text-center text-indigo-800 font-bold">
+            <h2 class="text-xl text-center text-indigo-800  font-bold">
               Admin Menu
             </h2>
 
@@ -37,8 +37,8 @@
             @if (Auth::guard('admin')->user()->avatar != null)
               <img
                 src=" {{ asset(Auth::guard('admin')->user()->avatar) }} "
-                alt=" "
-                class="mx-auto object-cover rounded-[100%] w-[100px]"
+                alt="{{ Auth::guard('admin')->user()->filename}}"
+                class="mx-auto object-cover rounded-[100%] w-[100px] text-black"
               />
             @else
               <img
