@@ -7,8 +7,8 @@
 <div class="relative group">
   <a href="{{ url('artworks/' . $artwork->id) }}">
     <img
-      src="{{ asset($artwork->image) }}"
-      alt="artwork image"
+      src="{{ asset('storage/' . $artwork->image) }}"
+      alt="{{ $artwork->title }}"
       width="0"
       height="0"
       sizes="100vw"

@@ -40,9 +40,9 @@
     <td>
       <img
         @unless ($user->avatar == null)
-            src="{{ asset($user->avatar) }}"
+            src="{{ asset('storage/' . $user->avatar) }}"
         @else
-            src="{{ asset("avatars/default-avatar.png") }}"
+            src="{{ asset('storage/' . "avatars/default-avatar.png") }}"
         @endunless
         alt="{{ $user->firstname }} "
         class="mx-auto object-cover rounded-[100%] w-1/6"
@@ -78,7 +78,7 @@
                   {{-- Display artwork image - Clickable to single artwork view --}}
                   <a href="{{ url("artworks/" . $favorite->artwork_id) }}">
                     <img
-                      src="{{ asset($favorite->artwork->image) }}"
+                      src="{{ asset('storage/' . $favorite->artwork->image) }}"
                       alt=" "
                       class="object-cover rounded-t-xl w-[100px] flex mx-auto"
                     />

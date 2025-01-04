@@ -52,7 +52,7 @@
                   {{-- href="{{ route('manage-listings', $artwork->id) }} }}" --}}
                 >
                   <img
-                    src="{{ asset($artwork->image) }}"
+                    src="{{ asset('storage/' . $artwork->image) }}"
                     alt=" "
                     class="object-cover rounded-t-xl w-20 mx-auto"
                   />

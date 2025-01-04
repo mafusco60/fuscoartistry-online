@@ -15,7 +15,7 @@
       <div class="grid grid-cols-3">
         <img
           class="w-[250px] mr-6 mb-6 rounded-xl col-start-2"
-          src="{{ asset($artwork->image) }}"
+          src="{{ asset('storage/' . $artwork->image) }}"
           alt="{{ $artwork->title }}"
         />
       </div>

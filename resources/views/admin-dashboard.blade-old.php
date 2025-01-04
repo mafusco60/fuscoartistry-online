@@ -41,14 +41,15 @@
 
                         @if (Auth::guard('admin')->user()->avatar != null)
                             <img
-                                src=" {{ asset(Auth::guard('admin')->user()->avatar) }} "
-                                alt=" "
+                                src=" {{ asset('storage/' . 'Auth::guard('admin')->user()->avatar)' }} "
+                                alt="{{ Auth::guard('admin')->user()->firstname }}"
                                 class="mx-auto object-cover rounded-[100%] w-[100px]"
                             />
                         @else
                             <img
-                                src=" {{ asset('avatars/default-avatar.png') }} "
-                                alt=" "
+                            src=" {{ asset('storage/' . 'avatars/default-avatar.png') }} "
+                                alt="{{ Auth::guard('admin')->user()->firstname }}"
+
                                 class="mx-auto object-cover rounded-[100%] w-1/6"
                             />
                         @endif

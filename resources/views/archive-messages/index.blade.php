@@ -28,7 +28,7 @@
                 @if ($archive_message->archive_upload)
                   <img
                     class="object-cover rounded-t-xl w-[100px] mx-auto"
-                    src="{{ asset($archive_message->archive_upload) }}"
+                    src="{{ asset('storage/' . $archive_message->archive_upload) }}"
                     alt=" "
                     class="object-cover rounded-t-xl w-20 mx-auto"
                   />
