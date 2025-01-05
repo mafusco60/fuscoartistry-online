@@ -34,6 +34,7 @@ Route::get('/messages/search', [MessageController::class, 'search'])->name('mess
 Route::get('/archive-messages/search', [ArchiveMessageController::class, 'search'])->name('archive-messages.search'); 
 
 Route::resource('artworks', ArtworkController::class);
+Route::post('/artworks/index', [ArtworkController::class, 'index'])->name('artworks');
 
 Route::get('/artworks/{artwork}', [ArtworkController::class, 'show'])->name('artworks.show'); 
 
