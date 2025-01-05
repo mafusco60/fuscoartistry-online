@@ -5,14 +5,11 @@
       <p class="mb-4"></p>
     </header>
 
-    <form method="POST"  action="{{ route('artworks') }}" enctype="multipart/form-data">
+    <form method="POST" action="/artworks" enctype="multipart/form-data">
       @csrf
       <div class="mb-2">
         <x-inputs.file id="image" name="image" label="Image" />
       </div>
-
-
-
 
       <div class="mb-2">
         <x-inputs.select
