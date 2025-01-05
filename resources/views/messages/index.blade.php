@@ -47,7 +47,7 @@
                   </a>
                 
         {{-- Download Image --}}    
-                  <a href="{{asset('storage/' . $message->image)}}" download>
+                  <a href="('storage/' . $message->image)}}" download>
                     <i class="fa-solid fa-download mx-auto text-center"></i>
                     <span class="text-center text-sm">Download Image</span>
                   </a>

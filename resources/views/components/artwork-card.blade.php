@@ -8,6 +8,7 @@
   <a href="{{ url('artworks/' . $artwork->id) }}">
     <img
       src="{{ asset('storage/' . $artwork->image) }}"
+
       alt="{{ $artwork->title }}"
       width="0"
       height="0"
