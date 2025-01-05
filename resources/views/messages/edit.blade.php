@@ -55,7 +55,7 @@
         <div class="mb-6">
           <label for="image" class="inline-block mb-2">Image</label>
           <img
-            src="{{ asset($message->image) }}"
+            src="{{ asset('storage/' . $message->image) }}"
             alt=" "
             class="object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl w-[100px]"
           />

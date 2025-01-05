@@ -43,13 +43,14 @@
           class="grid grid-cols-1 md:col-span-3 px-5 pt-5 border border-gray-200 bg-indigo-100 rounded-x mx-auto"
         >
           <a
-            href="{{ asset($artwork->image) }}"
+            href="{{ asset('storage/' . $artwork->image) }}"
             data-fancybox="gallery"
             data-caption="{{ $artwork->title }}"
           >
             <img
               class="w-[250px] mr-6 mb-6 rounded-xl"
-              src="{{ asset($artwork->image) }}"
+              
+              src="{{ asset('storage/' . $artwork->image) }}"
               alt="{{ $artwork->title }}"
             />
           </a>

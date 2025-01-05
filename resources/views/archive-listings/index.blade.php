@@ -27,7 +27,7 @@
             <tr class="border-gray-400">
               <td class="px-4 py-8 border-t border-b border-gray-400 text-lg">
                 <img
-                  src="{{ asset($archive_listing->archive_image) }}"
+                  src="{{ asset('storage/' . $archive_listing->archive_image) }}"
                   alt=" "
                   class="object-cover rounded-t-xl w-20 mx-auto blur-xs"
                 />

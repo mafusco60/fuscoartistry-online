@@ -26,8 +26,8 @@
           {{-- Image links to individual artwork --}}
           <a href="{{ 'artworks/' . $artwork->id }}">
             <img
-              src="{{ asset($artwork->image) }}"
-              alt=" {{ $artwork->title }}"
+            src="{{ asset('storage/' . $artwork->image) }}"
+            alt="{{ $artwork->title }}"
               class="object-contain rounded-t-xl md:rounded-tr-none md:rounded-l-xl w-full md:w-[300px] h-[300px] md:h-auto"
             />
           </a>

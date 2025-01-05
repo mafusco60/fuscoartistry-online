@@ -47,8 +47,9 @@
                             />
                         @else
                             <img
-                                src=" {{ asset('avatars/default-avatar.png') }} "
-                                alt=" "
+                        
+                                src=" {{ asset('storage/' . 'avatars/default-avatar.png') }} "
+                                alt="{{ Auth::guard('admin')->user()->firstname }}"
                                 class="mx-auto object-cover rounded-[100%] w-1/6"
                             />
                         @endif
