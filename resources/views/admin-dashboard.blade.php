@@ -36,13 +36,13 @@
 
             @if (Auth::guard('admin')->user()->avatar != null)
               <img
-                src=" {{ asset('storage/' . Auth::guard('admin')->user()->avatar) }} "
-                alt="{{ Auth::guard('admin')->user()->firstname}}"
+                src=" {{ asset(Auth::guard('admin')->user()->avatar) }} "
+                alt="{{ Auth::guard('admin')->user()->filename}}"
                 class="mx-auto object-cover rounded-[100%] w-[100px] text-black"
               />
             @else
               <img
-                src=" {{ asset('storage/' . 'avatars/default-avatar.png') }} "
+                src=" {{ asset('avatars/default-avatar.png') }} "
                 alt=" "
                 class="mx-auto object-cover rounded-[100%] w-1/6"
               />

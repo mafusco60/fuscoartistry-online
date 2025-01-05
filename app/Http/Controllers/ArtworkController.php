@@ -47,20 +47,15 @@ class ArtworkController extends Controller
   
     if($request->hasFile('image')){
       $image = $request->file('image');
-
       $filename = time() . '_' . $image->getClientOriginalName();
-       $formFields['image'] = $image->storeAs('images', $filename, 'public');
-
+      $formFields['image'] = $image->storeAs('images', $filename, 'public');
     }
-    
+
         $artwork = Artwork::create($formFields);
   
         return redirect()->route('artworks.show', ['artwork' => $artwork->id])->with('success', 'Artwork created successfully');
 
   }
-
-
-
 
     //@desc show the individual artwork listing
     //@route GET /artworks/{$id}

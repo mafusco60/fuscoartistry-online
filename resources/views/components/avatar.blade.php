@@ -4,7 +4,7 @@
 <div>
   @if ($userOrAdmin->avatar)
     <img
-      src="{{ asset('storage/' . $userOrAdmin->avatar) }}"
+      src="{{ asset($userOrAdmin->avatar) }}"
       alt="{{ $userOrAdmin->firstname }}"
       style="
         width: 3rem;
@@ -17,8 +17,8 @@
     <p class="text-center text-black text-sm font-semibold mt-2">{{ $userOrAdmin->filename }}</p>
   @else
     <img
-      src="{{ asset('storage/' . 'avatars/default-avatar.png') }}"
-      alt="{{ $userOrAdmin->firstname }}"
+      src="{{ asset('avatars/default-avatar.png') }}"
+      alt="{{ 'Avatar' }}"
       style="
         width: 3rem;
         height: 3rem;
