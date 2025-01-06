@@ -45,14 +45,18 @@ class ArtworkController extends Controller
         'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
   
-    if($request->hasFile('image')){
-      $image = $request->file('image');
 
-      $filename = time() . '_' . $image->getClientOriginalName();
-       $formFields['image'] = $image->storeAs('images', $filename, 'public');
+
+    if($request->hasFile('image')){
+     $image = $request->file('image');
+
+
+    $filename = time() . '_' . $image->getClientOriginalName();
+      $formFields['image'] = $image->storeAs('images', $filename, 'public');
 
     }
-    
+
+
         $artwork = Artwork::create($formFields);
   
         return redirect()->route('artworks.show', ['artwork' => $artwork->id])->with('success', 'Artwork created successfully');
