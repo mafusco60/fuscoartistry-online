@@ -42,7 +42,7 @@
                   data-fancybox
                   data-caption="{{$message->image}}">
                                   
-                  <img src="{{ asset ('upload/'. $message->image) }}"
+                  <img src="{{ asset ('storage/'. $message->image) }}"
                   class="object-cover rounded-t-xl w-[100px] mx-auto"  />
                   </a>
                 
