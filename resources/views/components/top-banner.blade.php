@@ -1,5 +1,5 @@
 @props([
-  'heading' => 'Enjoy exploring our collection.',
+  'heading' => 'Enjoy exploringmycollection.',
   'subheading' => 'Find just the right piece to enhance your space!',
 ])
 <section class="bg-indigo-900 text-white py-6 text-center">
