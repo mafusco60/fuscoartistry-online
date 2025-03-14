@@ -121,7 +121,7 @@
       <div class="mb-2">
         <button
           type="submit"
-          class="bg-indigo-900 text-white rounded py-2 px-4 hover:bg-blue-700"
+          class="bg-teal-900 text-white rounded py-2 px-4 hover:bg-blue-700"
         >
           Submit
         </button>

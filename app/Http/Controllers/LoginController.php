@@ -56,7 +56,7 @@ if (Auth::guard('admin')->attempt(['email' => $data['email'], 'password' => $dat
     return redirect()->intended('/admin-dashboard');
     //If auth fails return back to login page
     return back()->withErrors([
-        'email' => 'The provided credentials do not matchmyrecords.',
+        'email' => 'The provided credentials do not match our records.',
     ])->onlyInput('email');
         } 
      return redirect()->intended()->with('success', 'You are logged in!'); 

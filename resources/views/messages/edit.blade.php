@@ -41,7 +41,7 @@
       {{-- Subject --}}
       <div class="mb-3">
         <label for="subject" class="inline-block mb-2">Subject:</label>
-        <p class="text-indigo-800 inline">{{ $message->subject }}</p>
+        <p class="text-teal-800 inline">{{ $message->subject }}</p>
       </div>
       {{-- Message Body --}}
       <div class="mb-6">
@@ -75,7 +75,7 @@
             REPLY:
           </label>
 
-          <div class="w-full p-4 border border-rose-500 text-indigo-700">
+          <div class="w-full p-4 border border-rose-500 text-teal-700">
             <x-text-area
               id="reply"
               name="reply"
@@ -87,7 +87,7 @@
         {{-- Submit Button --}}
         <button
           type="submit"
-          class="bg-indigo-500 text-white rounded py-2 px-4 hover:bg-rose-800 text-center w-full"
+          class="bg-teal-500 text-white rounded py-2 px-4 hover:bg-rose-800 text-center w-full"
         >
           Submit Reply
         </button>

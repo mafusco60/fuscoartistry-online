@@ -14,7 +14,7 @@
   />
 
   <button
-    class="w-full md:w-auto bg-indigo-900 hover:bg-indigo-600 text-white px-4 py-3 focus:outline-none rounded-md"
+    class="w-full md:w-auto bg-teal-900 hover:bg-teal-600 text-white px-4 py-3 focus:outline-none rounded-md"
   >
     <i class="fa fa-search mr-1"></i>
     Search

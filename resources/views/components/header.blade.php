@@ -1,4 +1,4 @@
-<header class="bg-indigo-900 text-white p-4" x-data="{ open: false }">
+<header class="bg-teal-900 text-white p-4" x-data="{ open: false }">
   <div class="container mx-auto flex justify-between items-center">
     <h1 class="text-3xl font-semibold">
       <a href="{{ route('home') }}">
@@ -82,7 +82,7 @@
     x-cloak
     @click.away="open = false"
     id="mobile-menu"
-    class="bg-indigo-900 text-white mt-5 pb-4 space-y-2"
+    class="bg-teal-900 text-white mt-5 pb-4 space-y-2"
   >
     <x-nav-link url="/" :active="request()->is('/')" :mobile="true">
       <i class="fa fa-home inline"></i>
@@ -120,7 +120,7 @@
         <x-button-link
         url="/artworks/create"
         icon="edit"
-        textClass="text-indigo-900"
+        textClass="text-teal-900"
         :block="true"
         >
         Create Artwork

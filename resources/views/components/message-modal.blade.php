@@ -7,7 +7,7 @@
   <div x-data="{ open: false }">
     <button
       @click="open = true"
-      class="bg-indigo-100 text-rose-900 font-semibold hover:bg-indigo-700 hover:text-white w-full py-2 px-4 rounded-full flex items-center justify-center"
+      class="bg-teal-100 text-rose-900 font-semibold hover:bg-teal-700 hover:text-white w-full py-2 px-4 rounded-full flex items-center justify-center"
     >
       <i class="fas fa-envelope mr-3"></i>
       Contact Artist
@@ -75,7 +75,7 @@
 
           <button
             type="submit "
-            class="bg-indigo-900 hover:bg-indigo-500 text-white px-4 py-2 rounded-md"
+            class="bg-teal-900 hover:bg-teal-500 text-white px-4 py-2 rounded-md"
           >
             Send Message
           </button>

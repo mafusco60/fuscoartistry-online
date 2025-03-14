@@ -3,7 +3,7 @@
   <x-card>
    <div class=" text-center">
    
-    <i class="fas fa-exclamation-triangle fa-5x text-8xl text-indigo-900  text-center"></i>
+    <i class="fas fa-exclamation-triangle fa-5x text-8xl text-teal-900  text-center"></i>
  
           <h1 class="text-3xl font-bold mt-4 mb-2  text-center">Page Not Found</h1>
       <p class="text-gray-500 text-xl mb-10 text-center">
@@ -11,7 +11,7 @@
       </p>
       
         <a href="/"
-        class="bg-indigo-900 hover:bg-indigo-800 text-white  font-bold py-4 px-6 rounded mx-auto text-center"
+        class="bg-teal-900 hover:bg-teal-800 text-white  font-bold py-4 px-6 rounded mx-auto text-center"
       >
         Go Home
     </a>
