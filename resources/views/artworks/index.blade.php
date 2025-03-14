@@ -6,7 +6,7 @@
   @if (request()->has('keywords'))
     <a
       href="{{ route('artworks.index') }}"
-      class="block mt-4 text-center text-cyan-900 hover:text-cyan-600"
+      class="block mt-4 text-center text-indigo-900 hover:text-indigo-600"
     >
       Clear search
     </a>

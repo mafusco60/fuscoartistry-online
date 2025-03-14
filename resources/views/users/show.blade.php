@@ -25,16 +25,16 @@
     {{-- Subscribed? --}}
     <div class="text-center">
       @if ($user->subscribe == 1)
-        <i class="fas fa-check text-cyan-500"></i>
-        <span class="text-cyan-900">Subscribed</span>
+        <i class="fas fa-check text-indigo-500"></i>
+        <span class="text-indigo-900">Subscribed</span>
       @else
         <i class="fas fa-times text-rose-500"></i>
-        <span class="text-cyan-900">Not Subscribed</span>
+        <span class="text-indigo-900">Not Subscribed</span>
       @endif
     </div>
 
     {{-- Total Favorites --}}
-    <p class="text-center text-cyan-700">
+    <p class="text-center text-indigo-700">
       Total Favorites: {{ $favorites->count() }}
     </p>
     <td>

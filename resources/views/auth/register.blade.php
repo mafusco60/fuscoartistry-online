@@ -31,13 +31,13 @@
       />
       <button
         type="submit"
-        class="w-full bg-cyan-900 hover:bg-cyan-800 text-white mt-4 px-4 py-2 rounded focus:outline-none"
+        class="w-full bg-indigo-900 hover:bg-indigo-800 text-white mt-4 px-4 py-2 rounded focus:outline-none"
       >
         Register
       </button>
-      <p class="mt-4 text-cyan-900">
+      <p class="mt-4 text-indigo-900">
         Already have an account?
-        <a class="text-cyan-900" href="{{ route('login') }}">Login</a>
+        <a class="text-indigo-900" href="{{ route('login') }}">Login</a>
       </p>
     </form>
   </div>

@@ -78,7 +78,7 @@
 
       <button
         type="submit"
-        class="bg-cyan-900 hover:bg-cyan-500 text-white px-4 py-2 rounded-md"
+        class="bg-indigo-900 hover:bg-indigo-500 text-white px-4 py-2 rounded-md"
       >
         Send Message
       </button>

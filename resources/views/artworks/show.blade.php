@@ -1,7 +1,7 @@
 <x-layout>
   <a
     href="{{ route('artworks.index') }}"
-    class="text-cyan-900 text-md my-4 py-2 px-8"
+    class="text-indigo-900 text-md my-4 py-2 px-8"
   >
     <i class="fa-solid fa-arrow-alt-circle-left"></i>
     Back to Artworks
@@ -14,24 +14,24 @@
         {{-- Row 1 -- Cols 1-3 --}}
 
         <div
-          class="grid grid-cols-1 md:col-span-3 px-5 pt-5 border border-gray-200 bg-cyan-100 rounded-xl"
+          class="grid grid-cols-1 md:col-span-3 px-5 pt-5 border border-gray-200 bg-indigo-100 rounded-xl"
         >
           <h3 class="text-2xl text-center font-bold mt-10">
             "{{ $artwork->title }}"
           </h3>
-          <h2 class="text-xl text-center text-cyan-900 font-bold mb-10">
+          <h2 class="text-xl text-center text-indigo-900 font-bold mb-10">
             {{ ucwords($artwork->medium) }}
           </h2>
 
           @if ($artwork->original)
-            <h2 class="text-lg text-center text-cyan-900">
+            <h2 class="text-lg text-center text-indigo-900">
               Original: ${{ $artwork->original_price }}
             </h2>
-            <h2 class="text-lg text-center text-cyan-900">
+            <h2 class="text-lg text-center text-indigo-900">
               Substrate:
               {{ ucwords($artwork->original_substrate) }}
             </h2>
-            <h2 class="text-l text-center text-cyan-900 mb-2">
+            <h2 class="text-l text-center text-indigo-900 mb-2">
               Dimensions: {{ $artwork->original_dimensions }}
             </h2>
           @else
@@ -40,7 +40,7 @@
         </div>
         {{-- Row 1 - Cols 4-6 --}}
         <div
-          class="grid grid-cols-1 md:col-span-3 px-5 pt-5 border border-gray-200 bg-cyan-100 rounded-x mx-auto"
+          class="grid grid-cols-1 md:col-span-3 px-5 pt-5 border border-gray-200 bg-indigo-100 rounded-x mx-auto"
         >
           <a
             href="{{ asset('storage/' . $artwork->image) }}"
@@ -64,7 +64,7 @@
           <h1 class="w-full font-bold mt-6 md:text-end text-center">
             Print Lookup
           </h1>
-          <h2 class="text-lg text-cyan-900 mt-4">
+          <h2 class="text-lg text-indigo-900 mt-4">
             <a href="{{ url('pricings') }}">Price Chart</a>
           </h2>
         </div>
@@ -72,13 +72,13 @@
         {{-- Row 2 - Cols 1-6 --}}
         {{-- Description --}}
         <div
-          class="grid grid-cols-1 md:col-span-6 p-5 border border-gray-200 bg-cyan-100"
+          class="grid grid-cols-1 md:col-span-6 p-5 border border-gray-200 bg-indigo-100"
         >
           <h2 class="text-2xl font-bold mb-4 mr-5 text-rose-900">
             Description
           </h2>
           <h3
-            class="text-lg text-cyan-900 space-y-6 font-normal text-justify"
+            class="text-lg text-indigo-900 space-y-6 font-normal text-justify"
           >
             {{ $artwork->description }}
           </h3>
@@ -93,10 +93,10 @@
           <div class="grid grid-cols-1 md:col-span-8 w-full">
             <a
               href="{{ route('messages.create', $artwork->id) }}"
-              class="bg-cyan-100 text-rose-900 font-semibold hover:bg-cyan-700 hover:text-white w-full py-2 px-4 rounded-full flex items-center justify-center"
+              class="bg-indigo-100 text-rose-900 font-semibold hover:bg-indigo-700 hover:text-white w-full py-2 px-4 rounded-full flex items-center justify-center"
             >
               <button
-                class="bg-cyan-100 text-rose-900 font-semibold hover:bg-cyan-700 hover:text-white w-full py-2 px-4 rounded-full flex items-center justify-center"
+                class="bg-indigo-100 text-rose-900 font-semibold hover:bg-indigo-700 hover:text-white w-full py-2 px-4 rounded-full flex items-center justify-center"
               >
                 <i class="fas fa-envelope mr-3"></i>
                 Contact Artist
@@ -110,7 +110,7 @@
             @if (! Auth::guard('admin')->check())
               <a href="{{ route('login') }}">
                 <p
-                  class="bg-cyan-100 text-cyan-900 font-bold w-full py-2 px-4 rounded-full text-center"
+                  class="bg-indigo-100 text-indigo-900 font-bold w-full py-2 px-4 rounded-full text-center"
                 >
                   <i class="fas fa-sign-in mr-3"></i>
 
@@ -128,14 +128,14 @@
               @if (auth()->user()->favorites()->where('artwork_id', $artwork->id)->exists())
                 @method('DELETE')
                 <button
-                  class="bg-cyan-100 hover:bg-rose-700 text-rose-900 hover:text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
+                  class="bg-indigo-100 hover:bg-rose-700 text-rose-900 hover:text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
                 >
                   <i class="fas fa-bookmark mr-3"></i>
                   Remove from Favorites
                 </button>
               @else
                 <button
-                  class="bg-cyan-100 hover:bg-cyan-600 hover:text-white text-rose-900 font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
+                  class="bg-indigo-100 hover:bg-indigo-600 hover:text-white text-rose-900 font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
                 >
                   <i class="fas fa-heart mr-3"></i>
                   Add to Favorites
@@ -157,7 +157,7 @@
 
               <button
                 type="submit"
-                class="px-4 py-2 bg-cyan-100 text-rose-900 rounded-full font-semibold hover:bg-rose-700 hover:text-white w-full"
+                class="px-4 py-2 bg-indigo-100 text-rose-900 rounded-full font-semibold hover:bg-rose-700 hover:text-white w-full"
               >
                 <i class="fas fa-trash mr-3"></i>
                 Delete
@@ -170,7 +170,7 @@
             <a href="{{ route('artworks.edit', $artwork->id) }}">
               <button
                 type="submit"
-                class="bg-cyan-100 text-rose-900 rounded-full font-semibold hover:bg-cyan-700 hover:text-white w-full py-2 px-4 flex items-center justify-center"
+                class="bg-indigo-100 text-rose-900 rounded-full font-semibold hover:bg-indigo-700 hover:text-white w-full py-2 px-4 flex items-center justify-center"
               >
                 <i class="fas fa-edit mr-3"></i>
                 Edit

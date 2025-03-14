@@ -14,7 +14,7 @@
         >
     <body>
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-3 bg-cyan-900 h-max">
+            <div class="col-span-3 bg-indigo-900 h-max">
                 <div
                     class="text-white flex flex-col relative items-start px-5 h-[200vh]"
                 >
@@ -27,7 +27,7 @@
                     ></div>
                     <x-card>
                         <h2
-                            class="text-xl text-center text-cyan-800 font-bold"
+                            class="text-xl text-center text-indigo-800 font-bold"
                         >
                             Admin Menu
                         </h2>

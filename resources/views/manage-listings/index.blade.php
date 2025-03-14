@@ -12,7 +12,7 @@
       @if (request()->has('keywords'))
         <a
           href="{{ route('manage-listings.index') }}"
-          class="block mt-4 text-center text-cyan-900 hover:text-cyan-600"
+          class="block mt-4 text-center text-indigo-900 hover:text-indigo-600"
         >
           Clear search
         </a>
@@ -22,10 +22,10 @@
     {{-- Manage Artworks --}}
 
     <header>
-      <h1 class="text-3xl text-center font-bold my-6 text-cyan-900">
+      <h1 class="text-3xl text-center font-bold my-6 text-indigo-900">
         Manage Artworks
       </h1>
-      <p class="text-center text-cyan-900">
+      <p class="text-center text-indigo-900">
         Total Artworks: {{ $artworks->count() }}
       </p>
     </header>
@@ -95,14 +95,14 @@
               <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
                 <x-card>
                   {{-- Display if Original is Available: if so: Price, Size, and Substrate --}}
-                  <p class="text-cyan-900 font-bold text-sm">
+                  <p class="text-indigo-900 font-bold text-sm">
                     Original ID: {{ $artwork->id }}
                   </p>
 
                   @if ($artwork->original)
-                    <div class="text-cyan-900 text-sm">
+                    <div class="text-indigo-900 text-sm">
                       <i class="text-green-900 fa-solid fa-check inline"></i>
-                      <p class="inline text-cyan-900 font-bold text-sm">
+                      <p class="inline text-indigo-900 font-bold text-sm">
                         Original: Available
                       </p>
                       <h1>Price: ${{ $artwork->original_price }}</h1>
@@ -116,20 +116,20 @@
                       </h1>
                     </div>
                   @else
-                    <div class="text-cyan-900 text-sm">
+                    <div class="text-indigo-900 text-sm">
                       <i class="text-rose-900 fa-solid fa-times inline"></i>
-                      <p class="inline text-cyan-900 font-bold">
+                      <p class="inline text-indigo-900 font-bold">
                         Original Not Available
                       </p>
                     </div>
                   @endif
-                  <div class="text-cyan-900 text-sm">
+                  <div class="text-indigo-900 text-sm">
                     <i
                       class="text-sm text-green-900 fa-solid fa-check inline"
                     ></i>
                     {{-- Display (always) Prints Available --}}
-                    <a href="{{ url('pricings') }}" class="text-cyan-900">
-                      <p class="inline text-cyan-900 font-bold text-sm">
+                    <a href="{{ url('pricings') }}" class="text-indigo-900">
+                      <p class="inline text-indigo-900 font-bold text-sm">
                         Prints Available
                       </p>
                     </a>

@@ -5,7 +5,7 @@
 
 <section class="container mx-auto my-6">
   <div
-    class="bg-cyan-900 text-white rounded p-4 flex items-center justify-between flex-col md:flex-row gap-4"
+    class="bg-indigo-900 text-white rounded p-4 flex items-center justify-between flex-col md:flex-row gap-4"
   >
     <div>
       <h2 class="text-xl font-semibold">{{ $heading }}</h2>
@@ -17,7 +17,7 @@
     <x-button-link
       url="/artworks"
       icon="palette"
-      textClass="text-cyan-900"
+      textClass="text-indigo-900"
       :block="true"
     >
       View All Artworks
