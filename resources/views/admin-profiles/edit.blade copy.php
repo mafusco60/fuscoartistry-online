@@ -48,7 +48,7 @@
 
                     <button
                         type="submit"
-                        class="w-full bg-indigo-900 hover:bg-indigo-700 text-white px-4 py-2 border rounded focus:outline-none"
+                        class="w-full bg-cyan-900 hover:bg-cyan-700 text-white px-4 py-2 border rounded focus:outline-none"
                     >
                         Update Profile
                     </button>

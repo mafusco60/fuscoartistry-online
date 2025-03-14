@@ -3,7 +3,7 @@
   'icon' => null,
   'bgClass' => 'bg-yellow-500',
   'hoverClass' => 'hover:bg-yellow-400',
-  'textClass' => 'text-indigo-900',
+  'textClass' => 'text-cyan-900',
   'block' => 'false',
 ])
 

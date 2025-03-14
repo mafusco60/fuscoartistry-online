@@ -8,7 +8,7 @@
     @if (request()->has('keywords'))
       <a
         href="{{ route('users.index') }}"
-        class="block mt-4 text-center text-indigo-900 hover:text-indigo-600"
+        class="block mt-4 text-center text-cyan-900 hover:text-cyan-600"
       >
         Clear search
       </a>
@@ -17,7 +17,7 @@
 
   <x-card class="py-2">
     <header>
-      <h1 class="text-3xl text-center font-bold my-2 text-indigo-900">Users</h1>
+      <h1 class="text-3xl text-center font-bold my-2 text-cyan-900">Users</h1>
     </header>
 
     <table class="w-full table-auto rounded-sm">
@@ -29,7 +29,7 @@
               <td class="border-t border-b border-gray-300">
                 {{-- Display Creation Date and Time --}}
                 @unless ($user->created_at == null)
-                  <div class="text-indigo-900 text-center">
+                  <div class="text-cyan-900 text-center">
                     <p class="text-sm">Registered:</p>
                     <p class="text-sm">
                       {{ \Carbon\Carbon::parse($user->created_at)->setTimezone('America/New_York')->format('m-d-y') }}
@@ -43,7 +43,7 @@
 
               {{-- Display Favorite Listing ID's --}}
               <td
-                class="border-t border-b border-gray-300 text-indigo-900 px-4"
+                class="border-t border-b border-gray-300 text-cyan-900 px-4"
               >
                 @if ($user->favorites != null)
                   @if ($user->favorites->count() == 1)
@@ -73,13 +73,13 @@
                   <div>
                     {{-- Name / ID# --}}
 
-                    <p class="text-sm text-indigo-900 font-bold">
+                    <p class="text-sm text-cyan-900 font-bold">
                       {{ $user->firstname }}
                       {{ $user->lastname }}: ID#
                       {{ $user->id }}
                     </p>
 
-                    <div class="text-indigo-500 font-bold text-sm">
+                    <div class="text-cyan-500 font-bold text-sm">
                       {{-- Email Address --}}
                       <div>
                         <a
@@ -93,11 +93,11 @@
                       {{-- Subscribed? --}}
                       <p class="inline">Subscribed:</p>
                       @if ($user->subscribe == 1)
-                        <i class="fas fa-check text-indigo-500"></i>
-                        <span class="inline text-indigo-900">Yes</span>
+                        <i class="fas fa-check text-cyan-500"></i>
+                        <span class="inline text-cyan-900">Yes</span>
                       @else
                         <i class="fas fa-times text-rose-500"></i>
-                        <span class="inline text-indigo-900">No</span>
+                        <span class="inline text-cyan-900">No</span>
                       @endif
                     </div>
                   </div>

@@ -17,6 +17,9 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\ArchiveListingController;
 use App\Http\Controllers\ArchiveMessageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\NotFoundPageController;
+
+Route::get('/not-found', [NotFoundPageController::class, 'index'] )->name('not-found-page');
 
 Route::get('/', [HomeController::class, 'index'] )->name('home'); 
 

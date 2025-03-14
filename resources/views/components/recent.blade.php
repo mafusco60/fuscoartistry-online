@@ -2,7 +2,7 @@
   'artworks',
 ])
 
-<div class="text-indigo-900 text-center font-bold text-3xl mt-5 mx-auto">
+<div class="text-cyan-900 text-center font-bold text-3xl mt-5 mx-auto">
   Recent Artworks
 </div>
 <section class="px-4 py-6">
