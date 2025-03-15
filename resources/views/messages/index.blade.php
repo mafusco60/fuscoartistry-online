@@ -7,7 +7,7 @@
       @if (request()->has('keywords'))
         <a
         href="{{ route('messages.index') }}"
-        class="block mt-4 text-center text-teal-900 hover:text-teal-600"
+        class="block mt-4 text-center text-indigo-900 hover:text-indigo-600"
           >
           Clear search
         </a>
@@ -15,7 +15,7 @@
     </div>
 
   <header>
-    <h1 class="text-2xl text-center font-bold my-6 text-teal-900">Messages</h1>
+    <h1 class="text-2xl text-center font-bold my-6 text-indigo-900">Messages</h1>
   </header>
 
   <main class="container  mx-auto p-8">
@@ -32,7 +32,7 @@
               <td class="px-4 py-8 border-t border-b border-gray-300">
                 @if ($message->image)
       {{-- Display Image if it exists --}}
-                  <p class="text-teal-900 text-sm text-center font-semibold">
+                  <p class="text-indigo-900 text-sm text-center font-semibold">
                   User Upload:
                   </p>
                               
@@ -52,7 +52,7 @@
                     <span class="text-center text-sm">Download Image</span>
                   </a>
                 @else
-                  <p class="text-teal-500 font-semibold text-center text-sm p-4">
+                  <p class="text-indigo-500 font-semibold text-center text-sm p-4">
                   No Uploaded Image
                   </p>
                 @endif
@@ -75,32 +75,32 @@
           {{-- Display Message Details --}}
 
           {{-- Name --}}
-                <h1 class="text-sm font-bold inline text-teal-900 underline">Name:<h1 class="text-sm font-semibold text-black  inline">  {{ $message->name }}</h1><br>
+                <h1 class="text-sm font-bold inline text-indigo-900 underline">Name:<h1 class="text-sm font-semibold text-black  inline">  {{ $message->name }}</h1><br>
                          
           {{-- Email --}}
                 <a href="mailto:{{ $message->email }}" >
-                  <h1 class="text-sm font-bold inline text-teal-900 underline">Email:<h1 class="text-teal-500 font-bold text-sm inline"> {{ $message->email }}</a>
+                  <h1 class="text-sm font-bold inline text-indigo-900 underline">Email:<h1 class="text-indigo-500 font-bold text-sm inline"> {{ $message->email }}</a>
                           
           {{-- Subject --}}
                 <div>
-                  <h1 class="text-sm font-bold inline text-teal-900 underline">Subject:</h1>
+                  <h1 class="text-sm font-bold inline text-indigo-900 underline">Subject:</h1>
                   <span class="font-semibold text-sm inline text-black"
                     >{{ $message->subject }}</span>
                 </div>
 
           {{-- Artwork --}}
                          
-                <p class="text-sm font-bold  text-teal-900 underline inline"> Artwork:</p>
+                <p class="text-sm font-bold  text-indigo-900 underline inline"> Artwork:</p>
                 @if ($message->artwork_title != null)
                     {{$message->artwork_title}} 
                             
                 @else
-                  <p class="text-teal-900 font-semibold pb-5 text-sm inline">No Artwork </p>
+                  <p class="text-indigo-900 font-semibold pb-5 text-sm inline">No Artwork </p>
                 @endif 
 
             {{-- User --}}
                       
-                <h1 class="text-sm font-bold inline text-teal-900 underline"><br>User:</h1>   
+                <h1 class="text-sm font-bold inline text-indigo-900 underline"><br>User:</h1>   
                 @if ($message->sender_id == null)
                   <h1 class="text-sm font-semibold text-black  inline"> Guest<br></h1>
                 @else
@@ -109,7 +109,7 @@
 
             {{-- Message body --}}
                 <div>
-                  <p class="text-sm font-bold inline text-teal-900 underline ">Message:</p>
+                  <p class="text-sm font-bold inline text-indigo-900 underline ">Message:</p>
                   <h1 class="font-semibold text-sm inline text-black pb-4">{{ $message->body }}</h1>
                 </div>
                              
@@ -117,8 +117,8 @@
                 @if ($message->reply)
                   <div class="p-4 mt-4  border border-gray-300 text-md"
                           >
-                    <p class="font-bold mb-4 text-teal-500 underline">Reply Message:</p>
-                    <p class="text-sm font-normal text-teal-700 mb-4">{{ $message->reply }}
+                    <p class="font-bold mb-4 text-indigo-500 underline">Reply Message:</p>
+                    <p class="text-sm font-normal text-indigo-700 mb-4">{{ $message->reply }}
                     </p>
             {{-- Date and time of reply --}}
                               
@@ -134,7 +134,7 @@
                 @else
                   <div class= "text-lg">
                     <a href="{{route('messages.edit', $message->id)}}"
-                      class="text-teal-500 px-6 py-2 rounded-xl text-md">
+                      class="text-indigo-500 px-6 py-2 rounded-xl text-md">
                       <i class="fa-solid fa-reply text-center p-6"></i>Reply
                     </a>
                   </div>
@@ -154,7 +154,7 @@
                     type="submit"
                     class="text-red-400 py-2 rounded-xl">
                               
-                      <i class="text-teal-600 fa-solid fa-archive"
+                      <i class="text-indigo-600 fa-solid fa-archive"
                       >
                       </i>
                       <p class="text-sm text-stone-600">

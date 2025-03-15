@@ -7,7 +7,7 @@
       @if (request()->has('keywords'))
         <a
           href="{{ route('archive-listings.index') }}"
-          class="block mt-4 text-center text-teal-900 hover:text-teal-600"
+          class="block mt-4 text-center text-indigo-900 hover:text-indigo-600"
         >
           Clear search
         </a>
@@ -15,7 +15,7 @@
     </div>
 
     <header>
-      <h1 class="text-3xl text-center font-bold my-6 text-teal-800">
+      <h1 class="text-3xl text-center font-bold my-6 text-indigo-800">
         Archive Listings
       </h1>
     </header>
@@ -112,7 +112,7 @@
 
                   <button type="submit" class="text-red-400 py-2 rounded-xl">
                     <i
-                      class="text-teal-600 fa-solid fa-trash-restore-alt"
+                      class="text-indigo-600 fa-solid fa-trash-restore-alt"
                     ></i>
                     <p class="text-lg text-stone-600">Restore</p>
                   </button>

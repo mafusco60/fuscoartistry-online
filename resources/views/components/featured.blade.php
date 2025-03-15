@@ -9,9 +9,9 @@
 
 {{-- Featured Artworks Heading --}}
 
-<section class="bg-teal-50 px-4 pt-6 pb-10">
+<section class="bg-indigo-50 px-4 pt-6 pb-10">
   <div class="container-xl lg:container m-auto">
-    <h2 class="text-3xl font-bold text-teal-900 mb-6 text-center">
+    <h2 class="text-3xl font-bold text-indigo-900 mb-6 text-center">
       Featured Artworks
     </h2>
 
@@ -61,7 +61,7 @@
             {{--
               <a
               href="{{ 'artworks/' . $artwork->id }}"
-              class="absolute bottom-[25px] right-[15px] bg-teal-900 hover:bg-teal-800 text-white p-4 rounded-lg text-center text-sm w-2/3 md:w-1/3"
+              class="absolute bottom-[25px] right-[15px] bg-indigo-900 hover:bg-indigo-800 text-white p-4 rounded-lg text-center text-sm w-2/3 md:w-1/3"
               >
               Details
               </a>

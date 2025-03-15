@@ -5,14 +5,14 @@
       @if (request()->has('keywords'))
         <a
           href="{{ route('archive-messages.index') }}"
-          class="block mt-4 text-center text-teal-900 hover:text-teal-600"
+          class="block mt-4 text-center text-indigo-900 hover:text-indigo-600"
         >
           Clear search
         </a>
       @endif
     </div>
     <header>
-      <h1 class="text-xl text-center font-bold my-6 text-teal-900">
+      <h1 class="text-xl text-center font-bold my-6 text-indigo-900">
         Archived Messages
       </h1>
     </header>
@@ -50,7 +50,7 @@
               <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
                 <x-card>
                   {{-- Contact Name - May be different from the session sender --}}
-                  <div class="text-teal-500 font-semibold text-sm">
+                  <div class="text-indigo-500 font-semibold text-sm">
                     <h1>
                       {{ $archive_message->archive_name }}
                     </h1>
@@ -59,49 +59,49 @@
                   <div class="text-sm">
                     <label
                       for="user-name"
-                      class="inline-block text-sm font-semibold text-teal-900"
+                      class="inline-block text-sm font-semibold text-indigo-900"
                     >
                       Sender:
                     </label>
 
-                    <p class="text-teal-700 inline text-sm">
+                    <p class="text-indigo-700 inline text-sm">
                       {{ $archive_message->archive_sender_id ? $archive_message->user->firstname : 'Guest' }}
                     </p>
                     {{-- Artwork Title --}}
                     <div>
                       <label
                         for="artwork_title"
-                        class="text-sm font-semibold text-teal-900"
+                        class="text-sm font-semibold text-indigo-900"
                       >
                         Artwork:
                       </label>
-                      <p class="text-teal-700 inline text-sm">
+                      <p class="text-indigo-700 inline text-sm">
                         {{ $archive_message->archive_listing_id ? $archive_message->artwork->title : 'No Artwork' }}
                       </p>
                     </div>
 
                     {{-- Subject --}}
                     <div>
-                      <p class="text-teal-900 font-semibold text-sm inline">
+                      <p class="text-indigo-900 font-semibold text-sm inline">
                         Subject:
                       </p>
-                      <span class="text-teal-700 inline text-sm">
+                      <span class="text-indigo-700 inline text-sm">
                         {{ $archive_message->archive_subject }}
                       </span>
                     </div>
                     {{-- Message --}}
-                    <div class="text-teal-900 font-semibold text-sm inline">
-                      <p class="text-teal-900 inline text-sm">Message:</p>
-                      <span class="font-normal mb-4 text-teal-800 inline">
+                    <div class="text-indigo-900 font-semibold text-sm inline">
+                      <p class="text-indigo-900 inline text-sm">Message:</p>
+                      <span class="font-normal mb-4 text-indigo-800 inline">
                         {{ $archive_message->archive_body }}
                       </span>
                     </div>
                     {{-- Reply Message - if exists --}}
-                    <div class="text-teal-900 font-semibold text-sm">
+                    <div class="text-indigo-900 font-semibold text-sm">
                       Reply Message:
                       @unless ($archive_message->archive_reply == null)
                         <span
-                          class="font-normal text-sm text-teal-800 inline"
+                          class="font-normal text-sm text-indigo-800 inline"
                         >
                           {{ $archive_message->archive_reply }}
                         </span>
@@ -122,7 +122,7 @@
                     </a>
 
                     {{-- Filename --}}
-                    <div class="text-xs text-teal-800 font-bold">
+                    <div class="text-xs text-indigo-800 font-bold">
                       <p class="inline">Filename:</p>
                       <span class="font-normal inline">
                         {{ $archive_message->archive_upload }}
@@ -131,7 +131,7 @@
 
                     {{-- Display Reply Date and Time --}}
                     @unless ($archive_message->reply_creation_date == null)
-                      <div class="text-teal-900 text-xs font-bold">
+                      <div class="text-indigo-900 text-xs font-bold">
                         <p class="inline">Replied:</p>
                         <span class="font-normal">
                           {{ \Carbon\Carbon::parse($archive_message->reply_creation_date)->setTimezone('America/New_York')->format('m-d-y') }}
@@ -144,7 +144,7 @@
 
                     {{-- Display Archive Date and Time --}}
                     @unless ($archive_message->created_at == null)
-                      <div class="text-teal-900 text-xs font-bold">
+                      <div class="text-indigo-900 text-xs font-bold">
                         <span class="inline">Archive:</span>
                         <span class="font-normal">
                           {{ $archive_message->created_at->setTimezone('America/New_York')->format('m-d-y') }}
@@ -168,7 +168,7 @@
                   @csrf
                   <button type="submit" class="text-red-400 py-2 rounded-xl">
                     <i
-                      class="text-teal-600 fa-solid fa-trash-restore-alt"
+                      class="text-indigo-600 fa-solid fa-trash-restore-alt"
                     ></i>
                     <p class="text-sm text-stone-600">Restore</p>
                   </button>
