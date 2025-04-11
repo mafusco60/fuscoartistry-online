@@ -1,7 +1,7 @@
 {{-- Info Boxes: components/info-boxes.blade.php --}}
 
 {{-- --------------- Info Boxes --------------- --}}
-{{-- Three cards with Headings and links to other views on the website: Gallery / Contact Form / Pricing Charts --}}
+{{-- Three cards with Headings and links to other views on the website: Gallery / Contact Form / Etsy Shop--}}
 
 <section>
   <div class="container-xl lg:container m-auto">
@@ -52,25 +52,26 @@
         </div>
       </div>
 
-      {{-- Box Three: Price Chart Link --}}
+      {{-- Box Three: Etsy Link --}}
 
       <div class="bg-yellow-50 p-6 rounded-lg shadow-lg">
         <h2 class="text-indigo-900 text-2xl font-bold">
-          Check Out Pricing Charts
+          Check Out My Etsy Shop
         </h2>
         <p class="text-indigo-900 mt-2 mb-8 text-sm">
           Original not available? Get a high quality print.
         </p>
         <div class="my-5">
           <x-button-link
-            url="/pricings"
-            icon="dollar"
+            {{-- url="/pricings" --}}
+            url="https://www.etsy.com/shop/FuscoArtistry"
+            icon="shopping-bag"
             textClass="text-yellow-50"
             bgClass="bg-black"
             hoverClass="hover:bg-indigo-900"
             :block="true"
           >
-            View Prices
+            Go to Etsy Shop
           </x-button-link>
         </div>
       </div>
